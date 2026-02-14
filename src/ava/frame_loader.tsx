@@ -15,22 +15,25 @@ export default function FrameLoader() {
   useEffect(() => {
     const loadFrames = async () => {
       // Load all image modules
-      const imageModules = import.meta.glob<{ default: string }>(
-        './images/*/*.{jpg,png}',
-        { eager: true }
-      );
+      const imageModules: Record<string, { default: string }> =
+        import.meta.glob<{ default: string }>(
+          './images/*/*.{jpg,png}',
+          { eager: true }
+        );
 
       // Load coordinates
-      const coordModules = import.meta.glob<{ default: string }>(
-        './images/*/coords.txt',
-        { as: 'raw', eager: true }
-      );
+      const coordModules: Record<string, string> =
+        import.meta.glob<string>('./images/*/coords.txt', {
+          as: 'raw',
+          eager: true,
+        });
 
       // Load captions
-      const captionModules = import.meta.glob<{ default: string }>(
-        './images/*/caption.txt',
-        { as: 'raw', eager: true }
-      );
+      const captionModules: Record<string, string> =
+        import.meta.glob<string>('./images/*/caption.txt', {
+          as: 'raw',
+          eager: true,
+        });
 
       const frameMap: { [key: string]: FrameData } = {};
 

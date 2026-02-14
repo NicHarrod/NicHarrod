@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './room.css';
-import Frame from './frame';
+
 import FrameLoader from './frame_loader';
 
 export default function Room() {

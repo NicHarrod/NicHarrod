@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/avas-room", "destination": "/avas-room.html" },
+    { "source": "/avas-room/", "destination": "/avas-room.html" }
+  ]
+}
