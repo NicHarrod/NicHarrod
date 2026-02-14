@@ -1,6 +1,16 @@
 {
-  "rewrites": [
-    { "source": "/avas-room", "destination": "/avas-room.html" },
-    { "source": "/avas-room/", "destination": "/avas-room.html" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/avas-room/?", "dest": "/avas-room.html" },
+    { "handle": "filesystem" }
   ]
 }
