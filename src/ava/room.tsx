@@ -3,7 +3,8 @@ import './room.css';
 import meow_sound from './meow.mp3'
 
 import FrameLoader from './frame_loader';
-import SpotifyPlayerComponent from './spotify_player';
+import RecordPlayer from './record_player';
+
 
 export default function Room() {
   const [isNight, setIsNight] = useState(false);
@@ -43,7 +44,7 @@ export default function Room() {
         {isNight ? '' : ''}
       </button>
       <button className='Meow' onClick={meow}></button>
-      <SpotifyPlayerComponent/>
+      <RecordPlayer />
     </div>
   );
 }

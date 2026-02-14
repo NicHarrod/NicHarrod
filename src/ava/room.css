@@ -61,6 +61,34 @@
   transition: opacity 1s ease-in-out, visibility 0s linear 1s;
 }
 
+.record-player-button{
+  position: absolute;
+  top: 350px;
+  right: 280px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  height: 100px;
+  width: 100px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgba(145, 53, 53, 0);
+}
+#record-player-light{  position: absolute;
+  top: 473px;
+  right: 426px;
+
+  font-weight: bold;
+  border: none;
+  height: 7px;
+  width: 7px;
+  border-radius: 100%;
+  
+  background-color: rgb(174, 35, 35);
+}
+
+
 
 .light-switch {
   position: absolute;
