@@ -1,0 +1,134 @@
+.room-container {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: background-image 0.3s ease-in-out;
+}
+
+.room-container.day {
+  background-image: url('RoomDay.png');
+}
+
+.room-container.night {
+  background-image: url('RoomNight.png');
+}
+
+.light-switch {
+  position: absolute;
+  top: 690px;
+  right: 1190px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  height: 40px;
+  width: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  color: #333;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  transition: all 0.3s ease;
+}
+
+/* Modal Styles */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 90%;
+  max-height: 90vh;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
+.modal-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.modal-image-container img {
+  max-width: 100%;
+  max-height: 70vh;
+  border-radius: 8px;
+}
+
+.modal-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.modal-controls button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.modal-controls button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.modal-controls button:active {
+  transform: scale(0.95);
+}
+.heart-button{
+    transform: scale(0.85);
+}
+.heart-button :hover {
+
+  transform: scale(1.2);
+
+
+}
