@@ -1,7 +1,7 @@
 {
   "name": "nicharrod",
   "version": "1.0.0",
-  "description": "A basic React shell in TypeScript",
+  "description": "My main website",
   "type": "module",
   "scripts": {
     "dev": "vite",
