@@ -7,7 +7,8 @@ import { useEffect, useState } from "react"
 
 const TRACK_URI = "spotify:playlist:5aMPqBWnot4iMVoii1kKsJ";
 const CLIENT_ID = "46f6805c30694f35a7d327e4caf7ed8e";
-const REDIRECT_URI = window.location.origin;
+const REDIRECT_URI ="https://www.nicharrod.com/avas_room.html";
+
 const SCOPES = ["user-modify-playback-state", "streaming"];
 
 declare global {
