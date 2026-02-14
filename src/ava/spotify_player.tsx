@@ -1,4 +1,4 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
 
 // IMPORTANT:
 // - Requires Spotify Premium
@@ -35,7 +35,6 @@ function redirectToSpotifyLogin() {
 
 export default function SpotifyPlayerComponent(_: Props) {
   const [accessToken, setAccessToken] = useState<string | null>(null);
-//   const [player, setPlayer] = useState<any>(null);
   const [deviceId, setDeviceId] = useState<string | null>(null);
   const [isPaused, setIsPaused] = useState(true);
   const [isActive, setIsActive] = useState(false);
@@ -71,8 +70,6 @@ export default function SpotifyPlayerComponent(_: Props) {
         getOAuthToken: (cb: (token: string) => void) => cb(accessToken),
         volume: 0.5,
       });
-
-      setPlayer(_player);
 
       _player.addListener("ready", ({ device_id }: { device_id: string }) => {
         setDeviceId(device_id);
