@@ -73,6 +73,7 @@ export default function FrameLoader() {
             x_coord={data.x}
             y_coord={data.y}
             caption={data.caption || ''}
+            id={dir}
           />
         )
       );

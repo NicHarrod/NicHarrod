@@ -7,9 +7,10 @@ type frame = {
   x_coord: number;
   y_coord: number;
   caption: string;
+  id:string;
 };
 
-export default function Frame({ imgs, x_coord, y_coord, caption }: frame) {
+export default function Frame({ imgs, x_coord, y_coord, caption, id }: frame) {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -37,6 +38,7 @@ export default function Frame({ imgs, x_coord, y_coord, caption }: frame) {
     className="heart-button"
     src={heart}
     alt="View images"
+    id={`${id}-heart`}
     style={{
         position: "absolute",
         left: `${x_coord}px`,
@@ -59,7 +61,7 @@ export default function Frame({ imgs, x_coord, y_coord, caption }: frame) {
             </button>
 
             <div className="modal-image-container">
-                <p>{caption}</p>
+                <p className="caption">{caption}</p>
               <img
                 src={imgs[currentIndex]}
                 alt={`Image ${currentIndex + 1}`}
@@ -67,9 +69,9 @@ export default function Frame({ imgs, x_coord, y_coord, caption }: frame) {
             </div>
 
             <div className="modal-controls">
-              <button onClick={goToPrevious}>← Previous</button>
+              <button onClick={goToPrevious}>←</button>
               <span>{currentIndex + 1} / {imgs.length}</span>
-              <button onClick={goToNext}>Next →</button>
+              <button onClick={goToNext}>→</button>
             </div>
           </div>
         </div>
