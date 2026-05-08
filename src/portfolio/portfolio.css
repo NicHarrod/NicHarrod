@@ -1,0 +1,85 @@
+.portfolio-page {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+  color: #111827;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.portfolio-header {
+  max-width: 860px;
+  margin: 0 auto 1.5rem;
+}
+
+.portfolio-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.portfolio-header p {
+  margin: 0.5rem 0 0;
+  color: #334155;
+  font-size: 1.05rem;
+}
+
+.work-grid {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.work-card {
+  border: 1px solid #dbe7ff;
+  border-radius: 14px;
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 12px 32px -20px rgba(30, 41, 59, 0.35);
+}
+
+.work-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  background: #dbeafe;
+}
+
+.work-content {
+  padding: 1rem;
+}
+
+.work-content h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.work-content p {
+  margin: 0.6rem 0 0;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.work-tags {
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.work-tags li {
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  font-size: 0.85rem;
+}
+
+.portfolio-empty {
+  max-width: 980px;
+  margin: 2rem auto;
+  color: #334155;
+}

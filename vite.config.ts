@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         home: resolve(__dirname, 'index.html'),
         'avas-room': resolve(__dirname, 'avas_room.html'),
+        portfolio: resolve(__dirname, 'portfolio.html'),
       },
     },
   },

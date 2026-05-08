@@ -1,0 +1,15 @@
+{
+    "title": "Example_2",
+    "tagline": "This is an example project.",
+    "description": "This is an example project. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "thumbnail": "example_2.jpg",
+    "images": [
+        "example_3.jpg",
+        "example_2.jpg"
+    ],
+    "image_captions": [
+        "Example image 3",
+        "Example image 2"
+    ],
+    "tags": ["example", "test"]
+}
