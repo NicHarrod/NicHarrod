@@ -13,22 +13,6 @@ export type WorkItem = WorkAttributes & {
   sourceFile: string
 }
 
-const ensureLeadingSlash = (value: string): string => {
-  if (value.startsWith('/')) return value
-  return `/${value}`
-}
-
-const resolveWorkAssetPath = (sourceFile: string, assetPath?: string): string | undefined => {
-  if (!assetPath) return undefined
-  if (/^(https?:)?\/\//.test(assetPath) || assetPath.startsWith('data:') || assetPath.startsWith('/')) {
-    return assetPath
-  }
-
-  const sourceDir = sourceFile.replace(/\/[^/]+$/, '')
-  const normalized = `${sourceDir}/${assetPath}`.replace(/^\./, '')
-  return `/portfolio${ensureLeadingSlash(normalized)}`
-}
-
 const workModules = import.meta.glob('./works/*/*.json', {
   eager: true,
 }) as Record<string, { default: WorkAttributes }>
