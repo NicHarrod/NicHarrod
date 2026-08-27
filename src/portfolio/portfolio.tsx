@@ -1,5 +1,6 @@
 import './portfolio.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import { WorkListing } from './work_listing'
 import WorkDetail from './work_detail'
 import WorkEditor from './work_editor'
@@ -25,6 +26,7 @@ function Portfolio() {
 				<Route path="/works" element={<WorkDetail />} />
 				<Route path="/edit" element={<WorkEditor />} />
 			</Routes>
+			<Analytics />
 		</BrowserRouter>
 	)
 }

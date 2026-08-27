@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './room.css';
 import meow_sound from './meow.mp3'
+import { Analytics } from '@vercel/analytics/react'
 
 import FrameLoader from './frame_loader';
 import RecordPlayer from './record_player';
@@ -45,6 +46,7 @@ export default function Room() {
       </button>
       <button className='Meow' onClick={meow}></button>
       <RecordPlayer />
+      <Analytics />
     </div>
   );
 }
