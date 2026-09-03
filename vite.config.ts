@@ -11,6 +11,7 @@ export default defineConfig({
         home: resolve(__dirname, 'index.html'),
         'avas-room': resolve(__dirname, 'avas_room.html'),
         portfolio: resolve(__dirname, 'portfolio.html'),
+        privacy: resolve(__dirname, 'privacy.html'),
       },
     },
   },

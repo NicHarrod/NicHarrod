@@ -3,6 +3,7 @@
   "outputDirectory": "dist",
   "rewrites": [
     { "source": "/avas-room", "destination": "/avas_room.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/portfolio", "destination": "/portfolio.html" },
     { "source": "/portfolio/(.*)", "destination": "/portfolio.html" }
   ]
